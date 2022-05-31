@@ -1,4 +1,4 @@
-# Title
+# Pickling and Error Handling
 * Omar Lozano, 05.31.2022
 
 ## Introduction
