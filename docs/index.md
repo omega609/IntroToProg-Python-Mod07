@@ -49,29 +49,28 @@ Validating this script works as intended requires two approaches: (1) through Py
 
 ##
 
-## _ **Through Pycharm:** _
+## **Through Pycharm:**
 
 First, I ask the user to enter the make, model, and year and enter a valid make and model, and enter a string for the year. The exception is thrown when I enter a string for the year. I also enter an invalid integer and again I am prompted to enter a valid integer and finally the list of make, model and year are returned to the screen (Figure 5). Next, I go to Finder \&gt;Documents \&gt;\_PythonClass \&gt;Assignment07 \&gt;Assignment07test.dat and open the file and verify a file has been created with the byte stream (Figure 6).
 
 ##
 
-## _ **Using the Shell Operator:** _
+## **Using the Shell Operator:**
 
 To validate the code works in the command shell, I copy the path and paste it to the command line. I run the script using different data from what was used in PyCharm, a string value for year of &quot;seven&quot;, and capture the results of the code to demonstrate that the code works as intended (Figure 7). Finally, I use Finder again to locate the new Dat file created and validate the data entered has been pickled (Figure 8).
 
 ![](RackMultipart20220531-1-c9d8ng_html_6fc57c4d29806b2c.png)
 
-_ **Figure 5: Exception &quot;thrown&quot; when string is entered** _
+**Figure 5: Exception &quot;thrown&quot; when string is entered**
 
 ![](RackMultipart20220531-1-c9d8ng_html_9983ca6f90d806d7.png)
 
-_ **Figure 6: Dat file with binary protocol** _
+**Figure 6: Dat file with binary protocol**
 
 ![](RackMultipart20220531-1-c9d8ng_html_805cefafa25da8bd.png)_ **Figure 7: Exception thrown using shell and entering string for year** _
 
 ![](RackMultipart20220531-1-c9d8ng_html_fe4d03e6c546c220.png)
-
-_ **Figure 8: Dat File created using shell** _
+**Figure 8: Dat File created using shell**
 
 # Summary
 
