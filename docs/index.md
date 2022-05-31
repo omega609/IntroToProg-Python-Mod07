@@ -8,7 +8,7 @@ Assignment 07
 
 https://github.com/omega609/IntroToProg-Python-Mod07
 
-#
+
 # Pickling
 
 Pickling is the process of converting a Python object into a byte stream to store it in a file and or database. It is a useful module to use when dealing with complicated data and allows the user to save a file without having to convert data into characters to save as a text file. Pickling is easy to use and does not require several lines of code as demonstrated in my program.
@@ -49,13 +49,13 @@ I start by asking the user to enter the make, model, and year of a car. A valid 
 
 Validating this script works as intended requires two approaches: (1) through Pycharm and (2) using the Shell Operator.
 
-##
+
 
 ## **Through Pycharm:**
 
 First, I ask the user to enter the make, model, and year and enter a valid make and model, and enter a string for the year. The exception is thrown when I enter a string for the year. I also enter an invalid integer and again I am prompted to enter a valid integer and finally the list of make, model and year are returned to the screen (Figure 5). Next, I go to Finder \&gt;Documents \&gt;\_PythonClass \&gt;Assignment07 \&gt;Assignment07test.dat and open the file and verify a file has been created with the byte stream (Figure 6).
 
-##
+
 
 ## **Using the Shell Operator:**
 
@@ -71,7 +71,7 @@ To validate the code works in the command shell, I copy the path and paste it to
 
 <img width="468" alt="figure7-7" src="https://user-images.githubusercontent.com/76223227/171289572-d352fda3-eda7-4ff1-b6d8-0423f9b82e96.png">
 
- **Figure 7: Exception thrown using shell and entering string for year** _
+ **Figure 7: Exception thrown using shell and entering string for year**
 
 <img width="399" alt="figure7-8" src="https://user-images.githubusercontent.com/76223227/171289619-99b536d9-9fe8-4bce-bd23-7d72a5c9d9e3.png">
 
