@@ -17,17 +17,19 @@ Pickling is the process of converting a Python object into a byte stream to stor
 
 In order to use pickling, the &quot;pickle&quot; module must first be imported, which was the first thing needed for this script along with defining my global variables. The variables include an empty list and the file the script will be write to (Figure 1).
 
-![](RackMultipart20220531-1-c9d8ng_html_ea236061d550fddb.png)
+<img width="409" alt="figure07-1" src="https://user-images.githubusercontent.com/76223227/171288853-15015dda-170a-479c-b268-3b2cb59ef217.png">
 
 ## **Figure 1:** import pickle module **and declare global variables**
 
 Next, I create a function to save the data to a file with parameters representing the file and list of data that will be passed into the function. The binary file where I will store the list is opened using the open function. Just as we have seen before with the open function, the file and mode must be declared. However, instead of using the &quot;w&quot; mode, the &quot;wb&quot; mode is used to handle the file as binary. I also have to declare the data to &quot;pickle&quot; and the file where it will be stored. In this instance, the data is a list that will be created later by the user. Lastly, I close the file opened in this function (Figure 2).
 
-## ![](RackMultipart20220531-1-c9d8ng_html_15fac28ed316db23.png) Figure 2: Function to write a list object to a file in binary
+<img width="468" alt="figure7-2" src="https://user-images.githubusercontent.com/76223227/171289093-f39e7fb2-5186-4a03-8dab-31245198fe67.png">
 
-I created a second function, &quot;load\_data&quot;. This function takes in the file as a parameter, opens the file and reads the pickled object from the file. The list is then created, unpickled and assigned \ to the local variable &quot;file\_data.&quot; The list is returned after the file is closed (figure 3).
+##  Figure 2: Function to write a list object to a file in binary
 
-![](RackMultipart20220531-1-c9d8ng_html_4215256b8a3f315f.png)
+I created a second function, &quot;load\_data&quot;. This function takes in the file as a parameter, opens the file and reads the pickled object from the file. The list is then created, unpickled and assigned to the local variable &quot;file\_data.&quot; The list is returned after the file is closed (figure 3).
+
+<img width="468" alt="figure7-3" src="https://user-images.githubusercontent.com/76223227/171289269-23c4b434-5855-4218-a76e-cd32f57bea52.png">
 
 ## Figure 3: Function to unpickle file
 
@@ -39,7 +41,7 @@ For this assignment, I need a list that can be passed into the functions created
 
 I start by asking the user to enter the make, model, and year of a car. A valid integer is required for the year, and a string is returned from the input. I attempt to convert the input to an integer. It is at this point that I use the try except to handle exceptions that may come up. If I am unable to convert the input to an integer, the except clause lets the user know they must enter a year as an integer. Likewise, the year must be greater than zero but less than 2022 or the user will also be informed to enter a year up to 2022. If an exception is not raised, &quot;intYear&quot; is assigned to the value entered and the except clause is skipped (Figure 4).
 
-![](RackMultipart20220531-1-c9d8ng_html_5395546ff61f1a49.png)
+<img width="468" alt="figure7-4" src="https://user-images.githubusercontent.com/76223227/171289349-2b2d314d-4dd5-4eae-b62d-c8941e35efe0.png">
 
 ## Figure 4: Try statement with except clause
 
@@ -59,17 +61,20 @@ First, I ask the user to enter the make, model, and year and enter a valid make 
 
 To validate the code works in the command shell, I copy the path and paste it to the command line. I run the script using different data from what was used in PyCharm, a string value for year of &quot;seven&quot;, and capture the results of the code to demonstrate that the code works as intended (Figure 7). Finally, I use Finder again to locate the new Dat file created and validate the data entered has been pickled (Figure 8).
 
-![](RackMultipart20220531-1-c9d8ng_html_6fc57c4d29806b2c.png)
+<img width="330" alt="figure7-5" src="https://user-images.githubusercontent.com/76223227/171289407-2e66f13e-b9b4-4817-be7e-883823ac0da1.png">
 
 **Figure 5: Exception &quot;thrown&quot; when string is entered**
 
-![](RackMultipart20220531-1-c9d8ng_html_9983ca6f90d806d7.png)
+<img width="388" alt="figure7-6" src="https://user-images.githubusercontent.com/76223227/171289434-cce9bfc5-e56a-49b9-abc7-6febaf9a9cde.png">
 
 **Figure 6: Dat file with binary protocol**
 
-![](RackMultipart20220531-1-c9d8ng_html_805cefafa25da8bd.png)_ **Figure 7: Exception thrown using shell and entering string for year** _
+<img width="468" alt="figure7-7" src="https://user-images.githubusercontent.com/76223227/171289572-d352fda3-eda7-4ff1-b6d8-0423f9b82e96.png">
 
-![](RackMultipart20220531-1-c9d8ng_html_fe4d03e6c546c220.png)
+ **Figure 7: Exception thrown using shell and entering string for year** _
+
+<img width="399" alt="figure7-8" src="https://user-images.githubusercontent.com/76223227/171289619-99b536d9-9fe8-4bce-bd23-7d72a5c9d9e3.png">
+
 **Figure 8: Dat File created using shell**
 
 # Summary
