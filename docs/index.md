@@ -19,19 +19,19 @@ In order to use pickling, the &quot;pickle&quot; module must first be imported, 
 
 <img width="409" alt="figure07-1" src="https://user-images.githubusercontent.com/76223227/171288853-15015dda-170a-479c-b268-3b2cb59ef217.png">
 
-## **Figure 1:** import pickle module **and declare global variables**
+**Figure 1:** import pickle module **and declare global variables**
 
 Next, I create a function to save the data to a file with parameters representing the file and list of data that will be passed into the function. The binary file where I will store the list is opened using the open function. Just as we have seen before with the open function, the file and mode must be declared. However, instead of using the &quot;w&quot; mode, the &quot;wb&quot; mode is used to handle the file as binary. I also have to declare the data to &quot;pickle&quot; and the file where it will be stored. In this instance, the data is a list that will be created later by the user. Lastly, I close the file opened in this function (Figure 2).
 
 <img width="468" alt="figure7-2" src="https://user-images.githubusercontent.com/76223227/171289093-f39e7fb2-5186-4a03-8dab-31245198fe67.png">
 
-##  Figure 2: Function to write a list object to a file in binary
+**Figure 2: Function to write a list object to a file in binary**
 
 I created a second function, &quot;load\_data&quot;. This function takes in the file as a parameter, opens the file and reads the pickled object from the file. The list is then created, unpickled and assigned to the local variable &quot;file\_data.&quot; The list is returned after the file is closed (figure 3).
 
 <img width="468" alt="figure7-3" src="https://user-images.githubusercontent.com/76223227/171289269-23c4b434-5855-4218-a76e-cd32f57bea52.png">
 
-## Figure 3: Function to unpickle file
+**Figure 3: Function to unpickle file**
 
 # Structured Error Handling
 
@@ -43,7 +43,7 @@ I start by asking the user to enter the make, model, and year of a car. A valid 
 
 <img width="468" alt="figure7-4" src="https://user-images.githubusercontent.com/76223227/171289349-2b2d314d-4dd5-4eae-b62d-c8941e35efe0.png">
 
-## Figure 4: Try statement with except clause
+**Figure 4: Try statement with except clause**
 
 # Validating the Script
 
@@ -53,7 +53,7 @@ Validating this script works as intended requires two approaches: (1) through Py
 
 ## **Through Pycharm:**
 
-First, I ask the user to enter the make, model, and year and enter a valid make and model, and enter a string for the year. The exception is thrown when I enter a string for the year. I also enter an invalid integer and again I am prompted to enter a valid integer and finally the list of make, model and year are returned to the screen (Figure 5). Next, I go to Finder \&gt;Documents \&gt;\_PythonClass \&gt;Assignment07 \&gt;Assignment07test.dat and open the file and verify a file has been created with the byte stream (Figure 6).
+First, I ask the user to enter the make, model, and year and enter a valid make and model, and enter a string for the year. The exception is thrown when I enter a string for the year. I also enter an invalid integer and again I am prompted to enter a valid integer and finally the list of make, model and year are returned to the screen (Figure 5). Next, I go to Finder, Documents, _PythonClass, Assignment07, Assignment07test.dat and open the file and verify a file has been created with the byte stream (Figure 6).
 
 
 
